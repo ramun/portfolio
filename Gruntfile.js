@@ -54,6 +54,10 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/**/*.js'],
         tasks: ['dev-build']
       },
+      img: {
+        files: ['<%= config.src %>/**/*.{jpg,jpeg,png,gif}'],
+        tasks: ['copy:images']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
