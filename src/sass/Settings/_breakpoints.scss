@@ -1,0 +1,37 @@
+$breakpoints: (
+    micro-down: (
+        max-width: 350px
+    ),
+    tiny-up: (
+        min-width: 450px
+    ),
+    tiny-down: (
+        max-width: 599px
+    ),
+    small-down: (
+        max-width: 799px
+    ),
+    small-up: (
+        min-width: 600px
+    ),
+    small: (
+        min-width: 600px,
+        max-width: 799px
+    ),
+    medium-up: (
+        min-width: 800px
+    ),
+    medium-down: (
+        max-width: 1024px
+    ),
+    medium: (
+        min-width: 800px,
+        max-width: 1024px
+    ),
+    large-up: (
+        min-width: 1025px
+    ),
+    huge-up: (
+        min-width: 1441px
+    )
+);

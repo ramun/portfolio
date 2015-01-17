@@ -1,0 +1,4 @@
+=adjacent-sibling-of($sibling-selector-list)
+    @each $sibling-selector in $sibling-selector-list
+        #{$sibling-selector} + &
+            @content
