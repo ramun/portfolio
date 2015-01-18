@@ -1,5 +1,6 @@
 body
     box-sizing: border-box
+    margin: 0
 
 *, *::after, *::before
     box-sizing: inherit
@@ -10,3 +11,8 @@ img
 
 p, h1, h2, h3, h4
     margin: 0
+
+h1
+    +responsive-font(headline)
+h3
+    +responsive-font(title)

@@ -154,6 +154,7 @@ module.exports = function(grunt) {
         },
         files: {
           '<%= config.dist %>/index.html': ['<%= config.src %>/templates/pages/index.hbs'],
+          '<%= config.dist %>/project-localina.html': ['<%= config.src %>/templates/pages/project-localina.hbs'],
           '<%= config.dist %>/404.html': ['<%= config.src %>/templates/pages/404.hbs'],
         }
       }
@@ -163,7 +164,7 @@ module.exports = function(grunt) {
       main: {
         options: {
           bundleExec: true,
-          style: 'compressed',
+          style: 'expanded',
           loadPath: ['<%= config.src %>/bower_components', '<%= config.src %>/sass'],
           require: ['sass-globbing'],
           lineNumbers: true
