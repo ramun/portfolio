@@ -1,0 +1,25 @@
+$screen: 1024px //@media screen not working here?
+$gutter: 32px
+$gutter-outside: $gutter / 2 + $gutter
+$col-numbers: 12
+$col: (($screen - (2 * $gutter)) / $col-numbers) - $gutter
+// $col: (($screen - (4 * $gutter)) / $col-numbers) - $gutter
+$canvas: $screen - (3 * $gutter)
+$col5: (5 * $col) + (4 * $gutter)
+$col6: (6 * $col) + (5 * $gutter)
+
+.project-box-big
+	margin-left: $gutter-outside
+	width: $canvas
+
+	p.copy
+		margin-left: $gutter-outside
+		width: $col6
+
+.project-box-small-left
+	margin-left: $gutter-outside
+
+	div
+		margin-left: 100px
+
+.project-box-small-right
