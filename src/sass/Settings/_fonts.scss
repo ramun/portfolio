@@ -15,7 +15,8 @@ $fonts: (
         letter-spacing: 11.25px,
         line-height: 80px,
         color: $font-color-primary,
-        border-bottom: 1px solid $font-color-primary, //how to do the underline?
+        border-bottom: 1px solid lightgrey, //how to do the underline?
+        margin-bottom: $base * 2
         // respond-to: (
         //     large-up: (
         //         font-size: 36px,
@@ -47,7 +48,7 @@ $fonts: (
         line-height: 50px,
         color: $font-color-primary,
         border-bottom: 1px, //how to do the underline?
-        margin-top: $row2,
+        // margin-top: $row2,
         margin-bottom: $row4,
         // respond-to: (
         //     large-up: (
