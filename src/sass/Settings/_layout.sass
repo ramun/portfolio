@@ -1,0 +1,21 @@
+$screen: 1024px //@media screen not working here?
+
+$base: 8px
+
+$gutter: 4 * $base
+$gutter-outside: $gutter / 2 + $gutter
+
+$col-numbers: 12
+$col: (($screen - (2 * $gutter)) / $col-numbers) - $gutter
+// $col: (($screen - (4 * $gutter)) / $col-numbers) - $gutter
+
+$col5: (5 * $col) + (4 * $gutter)
+$col6: (6 * $col) + (5 * $gutter)
+$col1: $col + $gutter
+
+$canvas: $screen - (3 * $gutter)
+
+$row: $gutter
+$row2: 2 * $row
+$row3: 3 * $row
+$row4: 4 * $row

@@ -1,25 +1,68 @@
-$screen: 1024px //@media screen not working here?
-$gutter: 32px
-$gutter-outside: $gutter / 2 + $gutter
-$col-numbers: 12
-$col: (($screen - (2 * $gutter)) / $col-numbers) - $gutter
-// $col: (($screen - (4 * $gutter)) / $col-numbers) - $gutter
-$canvas: $screen - (3 * $gutter)
-$col5: (5 * $col) + (4 * $gutter)
-$col6: (6 * $col) + (5 * $gutter)
+@import "../Settings/layout"
 
-.project-box-big
+.canvas
 	margin-left: $gutter-outside
 	width: $canvas
 
+.main-img
+	width: $screen
+	margin-left: -$gutter-outside
+	margin-bottom: $base
+
+.project-box-big
+	margin-bottom: $row4
+
+	img
+		margin-top: $base * 2
+		margin-bottom: $row
+
+	h3
+		margin-left: $col1
+
 	p.copy
-		margin-left: $gutter-outside
-		width: $col6
+		margin-left: $col1
+		width: $col5
 
 .project-box-small-left
-	margin-left: $gutter-outside
+	float: left
+	display: inline
+	position: relative
+	margin-bottom: $row4
 
-	div
-		margin-left: 100px
+	img
+		float: left
+		display: inline
+		position: relative
+		width: $col6
+		height: auto
+
+	h3, p
+		float: left
+		margin-left: $gutter
+		width: $col5
 
 .project-box-small-right
+	float: left
+	display: inline
+	position: relative
+	margin-bottom: $row4
+
+	img
+		float: right
+		display: inline
+		position: relative
+		width: $col6
+		height: auto
+
+	h3, p
+		float: right
+		margin-right: $gutter
+		width: $col5
+
+
+
+
+
+
+
+

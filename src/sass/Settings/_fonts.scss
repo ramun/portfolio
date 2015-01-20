@@ -1,83 +1,87 @@
 @import "colors";
+@import "layout";
 
 $font-family-sans-serif: "Source Sans Pro", sans-serif;
-$font-family-serif: 'Merriweather', serif;
+$font-family-serif: Merriweather-LightItalic, serif;
 
 $font-color-primary: #343434;
 
 $fonts: (
     headline: (
         font-family: $font-family-serif,
-        font-size: 28px,
-        line-height: 40px,
+        font-size: 60px,
         font-weight: 300,
+        font-style: italic,
+        letter-spacing: 11.25px,
+        line-height: 80px,
         color: $font-color-primary,
-        letter-spacing: 0.5px,
-        respond-to: (
-            large-up: (
-                font-size: 36px,
-                line-height: 48px,
-                letter-spacing: 0px,
-            )
-        )
+        border-bottom: 1px solid $font-color-primary, //how to do the underline?
+        // respond-to: (
+        //     large-up: (
+        //         font-size: 36px,
+        //         line-height: 48px,
+        //         letter-spacing: 0px,
+        //     )
+        // )
+    ),
+    description: (
+        font-family: $font-family-sans-serif,
+        font-size: 18px,
+        font-weight: 300,
+        //letter-spacing: 3.55px,
+        line-height: 24px,
+        color: #9B9B9B,
+        // respond-to: (
+        //     large-up: (
+        //         font-size: 36px,
+        //         line-height: 48px,
+        //         letter-spacing: 0px,
+        //     )
+        // )
     ),
     lead: (
-        font-family: $font-family-sans-serif,
-        font-size: 24px,
-        line-height: 32px,
-        font-weight: 400,
+        font-family: $font-family-serif,
+        font-size: 32px,
+        font-weight: 300,
+        letter-spacing: 3.55px,
+        line-height: 50px,
         color: $font-color-primary,
-        respond-to: (
-            large-up: (
-                font-size: 28px,
-                line-height: 36px,
-            )
-        )
+        border-bottom: 1px, //how to do the underline?
+        margin-top: $row2,
+        margin-bottom: $row4,
+        // respond-to: (
+        //     large-up: (
+        //         font-size: 36px,
+        //         line-height: 48px,
+        //         letter-spacing: 0px,
+        //     )
+        // )
     ),
     title: (
-        font-family: $font-family-sans-serif,
-        font-size: 14px,
+        font-family: SourceSansPro-Semibold,
+        font-size: 24px,
         text-transform: uppercase,
-        line-height: 18px,
-        font-weight: 600,
+        line-height: 24px,
+        //font-weight: 600,
         color: $font-color-primary,
         letter-spacing: 1.5px,
-        respond-to: (
-            large-up: (
-                font-size: 16px,
-                line-height: 20px,
-            )
-        )
     ),
     subtitle: (
-        // for jobs
-    ),
-    label: (
-        inherit: title,
-        font-weight: 400,
-        letter-spacing: 1.2px,
-        respond-to: (
-            large-up: (
-                font-size: 14px,
-                line-height: 18px,
-            ),
-            huge-up: (
-                font-size: 16px,
-                line-height: 20px,
-            )
-        )
+        font-family: SourceSansPro-Semibold,
+        font-size: 18px,
+        text-transform: uppercase,
+        line-height: 24px,
+        //font-weight: 600,
+        color: $font-color-primary,
+        letter-spacing: 1.5px,
+        margin-bottom: $base
     ),
     copy: (
         font-family: $font-family-sans-serif,
-        font-size: 16px,
-        line-height: 1.2em,
-        font-weight: 400,
+        font-size: 18px,
+        line-height: 24px,
+        //font-weight: 400,
         color: $font-color-primary,
-        respond-to: (
-            large-up: (
-                font-size: 18px,
-            )
-        )
     ),
     team-contact: (
         inherit: copy,
