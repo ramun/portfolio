@@ -1,9 +1,12 @@
 @import "../Settings/layout"
 
+.canvas
+	margin-left: $gutter-outside
+	width: $canvas
+
 .main-img
-	width: 120% //da isch bschisse
+	width: 100% + (2 * $gutter-outside)
 	margin-left: -$gutter-outside
-	margin-right: 0
 	margin-top: $row
 	margin-bottom: $row2
 
@@ -11,14 +14,15 @@
 	margin-bottom: $row4
 
 	img
-		margin-top: $base * 2
+		margin-top: $row / 2
 		margin-bottom: $row
+		width: $canvas
 
 	h3
-		@include col1
+		margin-left: $ind1
 
 	p.copy
-		margin-left: $col1
+		margin-left: $ind1
 		width: $col5
 
 .project-box-small-left
@@ -44,6 +48,7 @@
 	display: inline
 	position: relative
 	margin-bottom: $row4
+	margin-left: 0
 
 	img
 		float: right
@@ -51,10 +56,12 @@
 		position: relative
 		width: $col6
 		height: auto
+		margin-left: 0
 
 	h3, p
 		float: right
-		margin-right: $gutter
+		//margin-right: $gutter
+		margin-left: 0
 		width: $col5
 
 
