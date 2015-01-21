@@ -1,12 +1,9 @@
 @import "../Settings/layout"
 
-.canvas
-	margin-left: $gutter-outside
-	width: $canvas
-
 .main-img
-	width: $screen
+	width: 120% //da isch bschisse
 	margin-left: -$gutter-outside
+	margin-right: 0
 	margin-top: $row
 	margin-bottom: $row2
 
@@ -18,7 +15,7 @@
 		margin-bottom: $row
 
 	h3
-		margin-left: $col1
+		@include col1
 
 	p.copy
 		margin-left: $col1
