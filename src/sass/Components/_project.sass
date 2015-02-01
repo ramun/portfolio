@@ -1,73 +1,61 @@
 @import "../Settings/layout"
 
-.canvas
-	margin-left: $gutter-outside
-	width: $canvas
 
 .main-img
-	width: 100% + (2 * $gutter-outside)
-	margin-left: -$gutter-outside
 	margin-top: $row
 	margin-bottom: $row2
 
 .project-box-big
 	margin-bottom: $row4
+	+clearfix
 
 	img
-		margin-top: $row / 2
-		margin-bottom: $row
-		width: $canvas
+		padding: 0 $gutter/2
 
-	h3
-		margin-left: $ind1
+	h3, p.copy
+		padding: 0 $gutter/2
+		+respond-to(medium-up)
+			width: 11/12 * 100%
+			margin-left: 1/12 * 100%
 
-	p.copy
-		margin-left: $ind1
-		width: $col5
+
+%project-box-small
+	margin-bottom: $row4
+
+	img
+		padding: 0 $gutter/2
+	.project-box-text
+		padding: 0 $gutter/2
+
+	+respond-to(tiny-down)
+		.project-box-text
+			margin-top: 20px // todo fix this
+
+	+respond-to(small-up)
+		+clearfix
+		img
+			width: 6/12 * 100%
+		.project-box-text
+			width: 6/12 * 100%
+
+	+respond-to(medium-up)
+		.project-box-text
+			width: 5/12 * 100%
 
 .project-box-small-left
-	float: left
-	display: inline
-	position: relative
-	margin-bottom: $row4
+	@extend %project-box-small
+	+respond-to(small-up)
+		img
+			float: left
+		.project-box-text
+			float: left
 
-	img
-		float: left
-		display: inline
-		position: relative
-		width: $col6
-		height: auto
-
-	h3, p
-		float: left
-		margin-left: $gutter
-		width: $col5
 
 .project-box-small-right
-	float: left
-	display: inline
-	position: relative
-	margin-bottom: $row4
-	margin-left: 0
-
-	img
-		float: right
-		display: inline
-		position: relative
-		width: $col6
-		height: auto
-		margin-left: 0
-
-	h3, p
-		float: right
-		//margin-right: $gutter
-		margin-left: 0
-		width: $col5
-
-
-
-
-
-
-
+	@extend %project-box-small
+	+respond-to(small-up)
+		img
+			float: right
+		.project-box-text
+			float: right
 

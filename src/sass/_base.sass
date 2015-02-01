@@ -12,10 +12,15 @@ img
 p, h1, h2, h3, h4
     margin: 0
 
+.white
+    color: white
+
 h1
     +responsive-font(headline)
 h2
     +responsive-font(title)
+// h2.white
+//     +responsive-font(title-white)
 h3
     +responsive-font(subtitle)
 p.description
@@ -24,3 +29,7 @@ p.lead
     +responsive-font(lead)
 p.copy
     +responsive-font(copy)
+p
+    +responsive-font(copy)
+a
+    +responsive-font(link)

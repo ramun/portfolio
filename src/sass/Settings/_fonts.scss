@@ -4,10 +4,10 @@
 $font-family-sans-serif: "Source Sans Pro", sans-serif;
 $font-family-serif: Merriweather-LightItalic, serif;
 
-$font-color-primary: #343434;
-
 $fonts: (
+    //h1
     headline: (
+        clear: both,
         font-family: $font-family-serif,
         font-size: 60px,
         font-weight: 300,
@@ -67,6 +67,10 @@ $fonts: (
         color: $font-color-primary,
         letter-spacing: 1.5px,
     ),
+    // title-white: (
+    //     inherit: title,
+    //     color: white,
+    // ),
     subtitle: (
         font-family: SourceSansPro-Semibold,
         font-size: 18px,
@@ -84,17 +88,10 @@ $fonts: (
         //font-weight: 400,
         color: $font-color-primary,
     ),
-    team-contact: (
+    link: (
         inherit: copy,
-        font-size: 14px,
-        respond-to: (
-            tiny-down: (
-                font-size: 18px,
-            ),
-            medium-up: (
-                font-size: 18px,
-            )
-        )
+        color: $font-color-secondary,
+        text-decoration: none,
     ),
     copy-small: (
         inherit: copy,
