@@ -1,9 +1,15 @@
-@import "../Settings/layout"
-
 header
 	margin-left: $gutter-outside
 	margin-top: $row
-	padding-bottom: $row4
+	padding-bottom: $row2
+	margin-bottom: $row2
+	+respond-to(small-up)
+		margin-bottom: $row3
+	+respond-to(medium-up)
+		margin-bottom: $row4
+	+respond-to(large-up)
+		margin-bottom: $row5
+
 
 	// #logo
 	// 	float: left
@@ -18,6 +24,7 @@ header
 		//width: $col2 + $gutter
 		//background-color: magenta
 		margin-left: $gutter
+		margin-right: $gutter
 		font-family: SourceSansPro-Semibold
 
 	nav
@@ -29,8 +36,10 @@ header
 	nav a
 		float: left
 		//display: inline
-		margin-left: $gutter
+		margin-left: $gutter * 2
 		font-family: "Source Sans Pro", sans-serif
+		color: $font-color-secondary
+		//border-bottom: 0 none
 		
 		&:hover
 			border-bottom: 2px solid $font-color-secondary

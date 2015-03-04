@@ -9,29 +9,29 @@ $breakpoints: (
         max-width: 599px
     ),
     small-down: (
-        max-width: 799px
+        max-width: 999px
     ),
     small-up: (
         min-width: 600px
     ),
     small: (
         min-width: 600px,
-        max-width: 799px
+        max-width: 999px
     ),
     medium-up: (
-        min-width: 800px
+        min-width: 1000px
     ),
     medium-down: (
-        max-width: 1024px
+        max-width: 1280px
     ),
     medium: (
-        min-width: 800px,
-        max-width: 1024px
+        min-width: 999px,
+        max-width: 1280px
     ),
     large-up: (
-        min-width: 1025px
+        min-width: 1440px
     ),
     huge-up: (
-        min-width: 1441px
+        min-width: 1920px
     )
 );

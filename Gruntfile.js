@@ -155,6 +155,7 @@ module.exports = function(grunt) {
         files: {
           '<%= config.dist %>/index.html': ['<%= config.src %>/templates/pages/index.hbs'],
           '<%= config.dist %>/project-localina.html': ['<%= config.src %>/templates/pages/project-localina.hbs'],
+          '<%= config.dist %>/cv.html': ['<%= config.src %>/templates/pages/cv.hbs'],
           '<%= config.dist %>/404.html': ['<%= config.src %>/templates/pages/404.hbs'],
         }
       }

@@ -1,0 +1,61 @@
+$color-teaser1: $green
+$color-teaser2: $blue
+$color-teaser3: $red
+
+.projects-teaser-wrapper
+	margin-top: $row
+	margin-bottom: $row4
+
+.project-teaser
+	display: block
+	//box-sizing: border-box
+	padding-bottom: $row*8//9/25 * 100%
+	+respond-to(medium-up)
+		padding-bottom: $row*12//9/25 * 100%
+
+	//border: 4px solid $color-secondary
+	position: relative
+	
+	.teaser-text
+		position: absolute
+		top: $row
+		left: $gutter-outside
+		padding-left: $gutter/2 - $border
+
+		p.white
+			+respond-to(small-up)
+				width: 9/12 * 100% // FIX THIS
+
+	// LOCALINA
+
+	&#localina-teaser
+		background: linear-gradient(rgba($color-teaser1, 0.7), rgba($color-teaser1, 0.7)), url(/assets/images/projects/localina/ramunliesch-localina-01.jpg)
+		background-size: cover
+		border: $border solid $color-teaser1
+
+		&:hover
+			background: linear-gradient(rgba($color-teaser1, 1), rgba($color-teaser1, 0.9)), url(/assets/images/projects/localina/ramunliesch-localina-01.jpg)
+			background-size: cover
+
+
+	// ABB
+
+	&#abb-teaser
+		background: linear-gradient(rgba($color-teaser2, 0.7), rgba($color-teaser2, 0.7)), url(/assets/images/projects/localina/ramunliesch-localina-01.jpg)
+		background-size: cover
+		border: $border solid $color-teaser2
+
+		&:hover
+			background: linear-gradient(rgba($color-teaser2, 1), rgba($color-teaser2, 0.9)), url(/assets/images/projects/localina/ramunliesch-localina-01.jpg)
+			background-size: cover
+
+	// VARIOUS
+
+	&#various-teaser
+		background: linear-gradient(rgba($color-teaser3, 0.7), rgba($color-teaser3, 0.7)), url(/assets/images/projects/localina/ramunliesch-localina-01.jpg)
+		background-size: cover
+		border: $border solid $color-teaser3
+
+		&:hover
+			background: linear-gradient(rgba($color-teaser3, 1), rgba($color-teaser3, 0.9)), url(/assets/images/projects/localina/ramunliesch-localina-01.jpg)
+			background-size: cover

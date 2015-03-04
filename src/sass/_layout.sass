@@ -1,3 +1,9 @@
+header
+	padding: 0 $gutter/2
+
+h2
+	margin-bottom: $row
+
 .canvas
 	width: 100%
 
@@ -5,8 +11,30 @@
 	+respond-to(small-up)
 		padding: 0 $gutter-outside
 
-	> h2, > h3, > p
+	> h1, > h2, > h3, > p.description, > div.quote, > p.intro
 		padding: 0 $gutter/2
+
+	p.lead
+		margin-bottom: $base
+
+	> div.quote
+		margin-left: $gutter/2
+		margin-right: $gutter/2
+		border-left: 1px solid lightgrey
+
+		// margin-top: $row2
+		// margin-bottom: $row2
+		// +respond-to(medium-up)
+		margin-top: $row4
+		margin-bottom: $row4
+
+		padding: 0 $gutter
+		+respond-to(small-up)
+			padding: 0 1/12 * 100%
+
+	p.description
+		+respond-to(medium-up)
+			width: 9/12 * 100%
 
 img
 	display: block

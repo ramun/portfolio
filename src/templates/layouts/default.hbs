@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="description" content="{{description}}">
-    <title>{{title}}</title>
-    <link href="/assets/rl.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Merriweather:300,400&amp;subset=latin" rel="stylesheet">
-    <link rel="shortcut icon" href="/assets/images/favicon.ico">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content="{{description}}">
+		<title>{{title}}</title>
+		<link href="/assets/rl.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Merriweather:300,400&amp;subset=latin" rel="stylesheet">
+		<link rel="shortcut icon" href="/assets/images/favicon.ico">
+	</head>
 
-  <!--[if lte IE 8]><body class="old-ie"><![endif]-->
-  <!--[if !IE]> --><body><!-- <![endif]-->
+	<!--[if lte IE 8]><body class="old-ie"><![endif]-->
+	<!--[if !IE]> --><body><!-- <![endif]-->
 
-    <div id="c">
+		<div id="c">
 
-      <header>
+			<header>
 
-        <a href="/index.html">
+				<a href="/index.html">
 
-          <img src="../../assets/images/logo.jpg">
-          
-          <p>Ramun<br>Liesch<br>Portfolio</p>
+					<img src="../../assets/images/logo.jpg">
+					
+					<p>Ramun<br>Liesch<br>Portfolio</p>
 
-        </a>
+				</a>
 
-        <nav>
-          <a href="/index.html">Welcome</a>
-          <a href="/project-localina.html">Work</a>
-          <a href="/index.html">Resumé</a>
-          <a href="/index.html">Contact</a>
-        </nav>
+				<nav>
+					<a href="/index.html">Welcome</a>
+					<a href="/project-localina.html">Work</a>
+					<a href="/index.html">Resumé</a>
+					<a href="/index.html">Contact</a>
+				</nav>
 
-      </header>
+			</header>
 
-      {{> body }}
+			{{> body }}
 
-      <footer>footer</footer>
+			<div class="canvas" id="learn-more">
+				<h2>Learn more about me and my work</h2>
+				<p>Don’t hesitate to <a href="mailto:ramunliesch@gmail.com">send me an email</a> or take a look at <a href="/cv.html">my résumé.</a></p>
+			</div>
+			
+			<footer class="canvas">
+				<div id="contact">
+					<a class="copy-white nohover" href="/index.html">Ramun Liesch – Interaction Designer & UX Consultant</a>
+					<a class="copy-white" href="mailto:ramunliesch@gmail.com">Email</a>
+					<a class="copy-white" href="https://www.linkedin.com/in/ramunliesch">LinkedIn</a>
+					<a class="copy-white" href="https://www.xing.com/profile/Ramun_Liesch">Xing</a>
+					<a class="copy-white" href="https://soundcloud.com/larosse">Soundcloud</a>
+				</div>
+				<p class="copy-white">© 2015 Ramun Liesch</p>
+			</footer>
 
-    </div>
+		</div>
 
-    {{> tracking }}
+		{{> tracking }}
 
-  </body>
+	</body>
 
 </html>

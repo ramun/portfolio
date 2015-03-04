@@ -1,100 +1,97 @@
 @import "colors";
 @import "layout";
 
-$font-family-sans-serif: "Source Sans Pro", sans-serif;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
 $font-family-serif: Merriweather-LightItalic, serif;
 
 $fonts: (
-    //h1
-    headline: (
-        clear: both,
-        font-family: $font-family-serif,
-        font-size: 60px,
-        font-weight: 300,
-        font-style: italic,
-        letter-spacing: 11.25px,
-        line-height: 80px,
-        color: $font-color-primary,
-        border-bottom: 1px solid lightgrey, //how to do the underline?
-        margin-bottom: $base * 2
-        // respond-to: (
-        //     large-up: (
-        //         font-size: 36px,
-        //         line-height: 48px,
-        //         letter-spacing: 0px,
-        //     )
-        // )
-    ),
-    description: (
-        font-family: $font-family-sans-serif,
-        font-size: 18px,
-        font-weight: 300,
-        //letter-spacing: 3.55px,
-        line-height: 24px,
-        color: #9B9B9B,
-        // respond-to: (
-        //     large-up: (
-        //         font-size: 36px,
-        //         line-height: 48px,
-        //         letter-spacing: 0px,
-        //     )
-        // )
-    ),
-    lead: (
-        font-family: $font-family-serif,
-        font-size: 32px,
-        font-weight: 300,
-        letter-spacing: 3.55px,
-        line-height: 50px,
-        color: $font-color-primary,
-        border-bottom: 1px, //how to do the underline?
-        // margin-top: $row2,
-        margin-bottom: $row4,
-        // respond-to: (
-        //     large-up: (
-        //         font-size: 36px,
-        //         line-height: 48px,
-        //         letter-spacing: 0px,
-        //     )
-        // )
-    ),
-    title: (
-        font-family: SourceSansPro-Semibold,
-        font-size: 24px,
-        text-transform: uppercase,
-        line-height: 24px,
-        //font-weight: 600,
-        color: $font-color-primary,
-        letter-spacing: 1.5px,
-    ),
-    // title-white: (
-    //     inherit: title,
-    //     color: white,
-    // ),
-    subtitle: (
-        font-family: SourceSansPro-Semibold,
-        font-size: 18px,
-        text-transform: uppercase,
-        line-height: 24px,
-        //font-weight: 600,
-        color: $font-color-primary,
-        letter-spacing: 1.5px,
-        margin-bottom: $base
-    ),
-    copy: (
-        font-family: $font-family-sans-serif,
-        font-size: 18px,
-        line-height: 24px,
-        //font-weight: 400,
-        color: $font-color-primary,
-    ),
-    link: (
-        inherit: copy,
-        color: $font-color-secondary,
-        text-decoration: none,
-    ),
-    copy-small: (
-        inherit: copy,
-        font-size: 14px,
-    )
+
+	//h1
+	headline: (
+		clear: both,
+		font-family: $font-family-serif,
+		font-size: 42px,
+		font-weight: 300,
+		font-style: italic,
+		letter-spacing: 6px,
+		line-height: 56px,
+		color: $font-color-primary,
+		border-bottom: 1px solid lightgrey, //ToDo how to do the underline?
+		margin-bottom: $base * 2,
+		respond-to: (
+			medium-up: (
+				font-size: 60px,
+				line-height: 80px,
+				letter-spacing: 11.25px,
+			)
+		)
+	),
+
+	description: (
+		font-family: $font-family-sans-serif,
+		font-size: 18px,
+		font-weight: 300,
+		line-height: 24px,
+		color: #9B9B9B,
+	),
+
+	lead: (
+		font-family: $font-family-serif,
+		font-size: 32px,
+		font-weight: 300,
+		letter-spacing: 3.55px,
+		line-height: 50px,
+		color: $font-color-primary,
+	),
+
+	//h2
+	title: (
+		font-family: SourceSansPro-Semibold,
+		font-size: 24px,
+		text-transform: uppercase,
+		line-height: 24px,
+		//font-weight: 600,
+		color: $font-color-primary,
+		letter-spacing: 1.5px,
+	),
+
+	//h3
+	subtitle: (
+		font-family: SourceSansPro-Semibold,
+		font-size: 18px,
+		text-transform: uppercase,
+		line-height: 24px,
+		//font-weight: 600,
+		color: $font-color-primary,
+		letter-spacing: 1.5px,
+		margin-bottom: $base
+	),
+
+	copy: (
+		font-family: $font-family-sans-serif,
+		font-size: 18px,
+		letter-spacing: 0.5px,
+		line-height: 24px,
+		//font-weight: 400,
+		color: $font-color-primary,
+	),
+
+	copy-white: (
+		inherit: copy,
+		font-family: SourceSansPro-Light,
+		letter-spacing: 1px,
+		color: white,
+	),
+	
+	link: (
+		inherit: copy,
+		// color: $font-color-secondary,
+		text-decoration: none,
+		color: $font-color-secondary,
+	),
+	
+	copy-small: (
+		inherit: copy,
+		font-size: 14px,
+	)
 )
